@@ -7,7 +7,12 @@ import org.deeplearning4j.text.sentenceiterator.SentencePreProcessor;
  */
 public class GetSecondColumnCsvPreprocessor implements SentencePreProcessor {
 
-    public String preProcess(String s) {
-        return s.split(",")[1].toLowerCase().replaceAll("[^a-zA-Z ]", "");
-    }
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2624447543518814879L;
+
+	public String preProcess(String s) {
+		return s.split(",")[1].toLowerCase().replaceAll("[^a-zA-Z ]", "");
+	}
 }
