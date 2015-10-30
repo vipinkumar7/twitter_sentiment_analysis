@@ -1,6 +1,6 @@
 word2vec-index
 .idea
-/target/
+target/
 .classpath
 .settings/
 .project
