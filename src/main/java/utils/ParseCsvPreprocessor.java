@@ -8,8 +8,7 @@ import javafx.util.Pair;
 public class ParseCsvPreprocessor {
 	public Pair<double[], String[]> preProcess(String s) {
 		String[] labelAndSentence = s.split(",");
-		double label = Double.parseDouble(labelAndSentence[0].replaceAll("\"",
-				""));
+		double label = Double.parseDouble(labelAndSentence[0].replaceAll("\"",""));
 		double[] labels = { label, 1 - label };
 		String[] words = labelAndSentence[1].toLowerCase().split(" ");
 		return new Pair<>(labels, words);
